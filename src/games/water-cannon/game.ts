@@ -117,7 +117,7 @@ function draw(
 ) {
   const { colors } = theme;
 
-  ctx.fillStyle = colors.background;
+  ctx.fillStyle = colors.night;
   ctx.fillRect(0, 0, WIDTH, HEIGHT);
 
   // Booth awning.
@@ -185,7 +185,7 @@ function draw(
   ctx.fillText(`Water ${state.tank}/${TANK_SIZE}`, WIDTH - 16, HEIGHT - 20);
 
   if (state.phase === 'over') {
-    ctx.fillStyle = colors.background;
+    ctx.fillStyle = colors.night;
     ctx.globalAlpha = 0.8;
     ctx.fillRect(0, 0, WIDTH, HEIGHT);
     ctx.globalAlpha = 1;
